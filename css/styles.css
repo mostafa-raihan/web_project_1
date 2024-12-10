@@ -1,0 +1,185 @@
+/* Leave these body styles here. They set the font to Montserrat and removes a margin from the body. */
+body {
+    font-family: "Montserrat";
+    margin: 0px;
+}
+/* Leave these img styles here. Images never should exceed the browser width. */
+img { max-width: 100%; }
+
+/* CSS3 variables (also known as custom properties) for colors.
+   Variables can be defined here for the whole document and you can utilize
+   them by using syntax: var(--variable_name).
+   For example:
+    body {
+        background: var(--background-color);
+    }
+*/
+:root {
+    --background-color: rgba(11,14,23,1);
+    --text-color: rgba(255,255,255,1);
+    --text-color-dim: rgba(255,255,255,0.64);
+
+    --separator-line-color: rgba(101,19,114,0.48);
+
+    --btn-background-color: rgba(58,11,77,1);
+    --btn-border: 2px solid rgba(101,19,114,1);
+    --btn-box-shadow: 6px 0 27px 14px rgba(58,11,77,0.78);
+
+    --form-background-color: rgba(9,6,47,1);
+    --form-border-color: rgba(101,19,114,0.46);
+    --form-text-placeholder-color: rgba(255,255,255,0.26);
+}
+
+/* Your styles go below for the 1060px resolution */
+
+body {
+    /* Example on using the color variable for background */
+    background-color: var(--background-color);
+}
+
+p {
+    /* Example on using the color variables for text */
+    color: var(--text-color-dim);
+}
+
+#main-nav {
+    position: fixed;
+    width: 100%;
+  }
+
+  #main-nav ul {
+    list-style-type:none;
+    margin: 0px;
+    padding: 12px 0px;
+    display: flex;
+    justify-content:space-evenly;
+  }
+  
+  #main-nav ul li a {
+    text-decoration: none;
+    font-size: 15.5px;
+  }  
+  
+
+
+/* Global Styles */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 700;
+    margin: 0 15px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    color: var(--text-color);
+}
+
+.hero h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.hero img {
+    width: 300px;
+    max-width: 100%;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background: var(--btn-background-color);
+    border: var(--btn-border);
+    color: var(--text-color);
+    border-radius: 5px;
+    box-shadow: var(--btn-box-shadow);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    opacity: 0.9;
+}
+
+/* About Section */
+.about {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    color: var(--text-color-dim);
+}
+
+/* Signup Section */
+.signup {
+    padding: 60px 20px;
+    background: var(--form-background-color);
+    color: var(--text-color);
+    text-align: center;
+}
+
+.signup h2 {
+    margin-bottom: 20px;
+}
+
+.signup form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.signup input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background: none;
+    border: 1px solid var(--form-border-color);
+    color: var(--text-color);
+}
+
+.signup button {
+    width: 100%;
+    padding: 10px;
+    background: var(--btn-background-color);
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.signup button:hover {
+    opacity: 0.9;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8rem;
+    color: var(--text-color-dim);
+}
